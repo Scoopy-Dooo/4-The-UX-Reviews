@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>SCO The UX Reviews</title>
+    <!--  font awesome style file -->
+    <link rel="stylesheet" href="./styles/all.min.css" />
+    <!-- main styling file -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- favicon -->
+    <link rel="icon" href="./images/favicon.png" />
+    <!-- google font linking -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- !media querry linking -->
+    <link rel="stylesheet" href="./media-querry/media-querry.css" />
+    <!--  my small script file 😊-->
+    <link rel="stylesheet" href="js/script.js" />
+  </head>
+  <body>
+    <!-- ! navbar section -->
+    <div class="navbar section">
+      <div class="container">
+        <div class="navtitle">
+          <a id="#nav-aside" href="#HOME"
+            ><h1>The UX <span>Review</span></h1></a
+          >
+        </div>
+        <div class="navmenu">
+          <a href="#HOME">HOME </a>
+          <i class="fa-solid fa-star greystar"></i>
+          <a href="#ARTICLES">LATEST ARTICLES </a>
+          <i class="fa-solid fa-star greystar"></i>
+          <a href="#AUTHORS">AUTHORS </a>
+          <i class="fa-solid fa-star greystar"></i>
+          <a href="#COMMUNITY">COMMUNITY</a>
+        </div>
+        <div class="navsub">
+          <a href="#subscribe">SUBSCRIBE NOW</a>
+        </div>
+        <!-- <label for="aside-active">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox" id="aside-active" /> -->
+        <a class="nav-btn box-shadow1" onclick="openNav()">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+      </div>
+    </div>
+    <!-- aside navbar start -->
+    <div class="nav-aside-container" id="aside">
+      <div class="nav-aside" id="aside-active">
+        <div class="aside-menu">
+          <div class="menu-link"><h2>MENU</h2></div>
+          <div class="aside-close">
+            <a href="javascript:void(0)" onclick="closeNav()"
+              ><i class="fa-solid fa-x"></i
+            ></a>
+          </div>
+        </div>
+        <div class="aside-links">
+          <a href="#HOME">HOME</a>
+          <a href="#ARTICLES">LATEST ARTICLES</a>
+          <a href="#AUTHORS">AUTHORS</a>
+          <a href="#COMMUNITY">COMMUNITY</a>
+          <a href="#subscribe"
+            ><button class="box-shadow1">
+              <i class="fa-solid fa-rocket"></i>SUBSCRIBE NOW
+            </button></a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- aside navbar end -->
+    <!-- dark layer on sidenav activation-->
+    <div class="dark-layer" id="layer"></div>
+    <!-- !hero section start-->
+    <div class="hero section" id="HOME">
+      <!-- squeres code -->
+      <div class="squares">
+        <div class="square1st"></div>
+        <!-- the second square -->
+        <div class="square2nd"></div>
+        <!-- the first square -->
+        <div class="square3rd"></div>
+      </div>
+      <div class="container">
+        <!--  ?left hero section -->
+        <div class="heroleft hero-content w-lg-100">
+          <p class="herotrend white-text">🔥 TRENDING NOW</p>
+          <h2 class="BRUTAL">BRUTAL</h2>
+          <h2 class="THOUGHTS">THOUGHTS</h2>
+          <h2 class="BOLD">BOLD IDEAS</h2>
+          <p class="pbox">
+            Raw, unfiltered content about tech, design, and culture. No
+            sugar-coating, just pure truth that hits different.
+          </p>
+          <span>
+            <button class="butstart btn white-text">
+              <i class="fa-solid fa-rocket"></i>START READING
+            </button>
+          </span>
+          <span>
+            <button class="butwatch btn">
+              <i class="fa-solid fa-play"></i>WATCH INTRO
+            </button>
+          </span>
+        </div>
+        <!-- ?hero right content -->
+        <div class="heroright hero-content w-lg-100">
+          <span class="white-text box-shadow1">FEATURE</span>
+          <img
+            class="box-shadow1"
+            src="./images/hero-img.png"
+            alt="الله اكبر"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- !hero section end -->
+    <div class="articles section" id="ARTICLES">
+      <div class="container">
+        <div class="art-left w-lg-100">
+          <div class="art-title">
+            <h3>LATEST ARTICLES</h3>
+            <span class="box-shadow1 white-text"> 🔥 FRESH CONTENT </span>
+          </div>
+          <div class="art-card card1 box-shadow1">
+            <div class="art-card-img">
+              <span class="floating-span float1 white-text">NEW</span>
+              <img
+                src="./images/user-engagement-2.jpg"
+                alt="user-engagement-2"
+              />
+            </div>
+            <div class="art-card-text">
+              <p>TECH</p>
+              <h3>Why Your Website Needs More Edge</h3>
+              <p>
+                Exploring the psychological impact of bold, unapologetic design
+                choices on user engagement and brand perception in the digital
+                age.
+              </p>
+              <p class="art-card-footer">
+                <span><i class="fa-solid fa-user"></i> BY ALEX BRUTAL </span>
+                <span><i class="fa-solid fa-calendar"></i>JAN 8, 2025 </span>
+                <span><i class="fa-solid fa-clock"></i>5 MIN READ </span>
+                <span><i class="fa-solid fa-heart"></i> 127</span>
+              </p>
+            </div>
+          </div>
+          <div class="art-card card2 box-shadow1">
+            <div class="art-card-img">
+              <span class="floating-span float2 white-text">HOT</span>
+              <img
+                src="./images/guide-to-typography.avif"
+                alt="guide-to-typography"
+              />
+            </div>
+            <div class="art-card-text">
+              <p>DESIGN</p>
+              <h3>Typography That Screams</h3>
+              <p>
+                How to choose and implement bold typography that commands
+                attention without sacrificing readability or user experience.
+              </p>
+              <p class="art-card-footer">
+                <span
+                  ><i class="fa-solid fa-user"></i> BY BY Arnold Reeve
+                </span>
+                <span><i class="fa-solid fa-calendar"></i>JAN 6, 2025 </span>
+                <span><i class="fa-solid fa-clock"></i>7 MIN READ </span>
+                <span><i class="fa-solid fa-heart"></i> 89</span>
+              </p>
+            </div>
+          </div>
+          <div class="art-card card3 box-shadow1">
+            <div class="art-card-img">
+              <span class="floating-span float3 white-text">VIRAL</span>
+              <img src="./images/anti-instagram.jpg" alt="anti-instagram" />
+            </div>
+            <div class="art-card-text">
+              <p>CULTURE</p>
+              <h3>The Anti-Instagram Movement</h3>
+              <p>
+                Young creators are abandoning polished feeds for raw, authentic
+                content that celebrates imperfection and real human connection.
+              </p>
+              <p class="art-card-footer">
+                <span><i class="fa-solid fa-user"></i>BY MIKE EDGE </span>
+                <span><i class="fa-solid fa-calendar"></i>JAN 4, 2025 </span>
+                <span><i class="fa-solid fa-clock"></i>4 MIN READ </span>
+                <span><i class="fa-solid fa-heart"></i> 203</span>
+              </p>
+            </div>
+          </div>
+          <center class="art-btn">
+            <button class="white-text btn">
+              <i class="fa-solid fa-plus"></i>LOAD MORE ARTICLES
+            </button>
+          </center>
+        </div>
+        <div class="art-right w-lg-100">
+          <div class="art-sticky">
+            <div class="art-trend box-shadow1">
+              <h2>TRENDING NOW</h2>
+              <br />
+              <div>
+                <h2>01</h2>
+                <span>
+                  <h3>The Death of Minimalism</h3>
+                  <p>12.5K reads • 🔥 Trending</p>
+                </span>
+              </div>
+              <br />
+              <div>
+                <h2>02</h2>
+                <span>
+                  <h3>Chaos as a Design System</h3>
+                  <p>8.2K reads • ⚡ Rising</p>
+                </span>
+              </div>
+              <br />
+              <div>
+                <h2>03</h2>
+                <span>
+                  <h3>Digital Rebellion</h3>
+                  <p>6.7K reads • 💥 Hot</p>
+                </span>
+              </div>
+              <br />
+            </div>
+
+            <div class="art-categ box-shadow1">
+              <h2>CATEGORIES</h2>
+              <ul>
+                <li><button class="btn1">TECH (24)</button></li>
+                <li><button class="btn2">DESIGN (18)</button></li>
+                <li><button class="btn3">CULTURE (15)</button></li>
+                <li><button class="btn4">OPINION (12)</button></li>
+                <li><button class="btn5">TUTORIALS (9)</button></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ! articles section end -->
+    <!-- !authors section start -->
+
+    <div class="authers section" id="AUTHORS">
+      <div class="square4th"></div>
+      <div class="square5th"></div>
+      <div class="container">
+        <div class="auth-title section-head">
+          <h2>MEET THE AUTHORS</h2>
+          <p>The rebels behind the brutal truth</p>
+        </div>
+        <div class="auth-cards">
+          <div
+            class="auth-card card1 card box-shadow1 w-xl-30 w-lg-50 w-md-100"
+          >
+            <span class="floating-span float1 white-text">FOUNDER </span>
+            <img src="./images/avatar-1.jpg" alt="nigga" />
+            <h3>ALEX BRUTAL</h3>
+            <h4>Tech Critic & Design Rebel</h4>
+            <p>
+              Destroying conventional wisdom one article at a time. 10+ years
+              fighting the good fight against boring design and corporate BS.
+            </p>
+            <p class="auth-social">
+              <a href="https://twitter.com/" target="blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://linkedin.com/" target="blank"
+                ><i class="fa-brands fa-square-linkedin"></i
+              ></a>
+              <a href="https://instagram.com/" target="blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </p>
+          </div>
+          <div
+            class="auth-card card2 card box-shadow1 w-xl-30 w-lg-50 w-md-100"
+          >
+            <span class="floating-span float2 white-text">LEAD</span>
+            <img src="./images/avatar-2.jpg" alt="hambozo" />
+            <h3>Arnold Reeve</h3>
+            <h4>UX Anarchist & Visual Provocateur</h4>
+            <p>
+              Challenging design norms and creating chaos that actually works.
+              Former corporate designer turned rebel with a cause.
+            </p>
+            <p class="auth-social">
+              <a href="https://twitter.com/" target="blank">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="https://linkedin.com/" target="blank">
+                <i class="fa-brands fa-square-linkedin"></i>
+              </a>
+              <a href="https://instagram.com/" target="blank"
+                ><i class="fa-brands fa-instagram"></i>
+              </a>
+            </p>
+          </div>
+          <div
+            class="auth-card card3 card box-shadow1 w-xl-30 w-lg-50 w-md-100"
+          >
+            <span class="floating-span float3 white-text">VIRAL</span>
+            <img src="./images/avatar-3.jpg" alt="akonko" />
+            <h3>MIKE EDGE</h3>
+            <h4>Cultural Critic & Trend Destroyer</h4>
+            <p>
+              Dissecting digital culture and exposing the truth behind viral
+              trends. No filter, just facts that cut through the noise.
+            </p>
+            <p class="auth-social">
+              <a href="https://twitter.com/" target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://linkedin.com/" target="_blank"
+                ><i class="fa-brands fa-square-linkedin"></i
+              ></a>
+              <a href="https://instagram.com/" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- !authors section end -->
+
+    <!-- !community section start -->
+    <div class="community section" id="COMMUNITY">
+      <div class="container">
+        <div class="comm-title section-head">
+          <h2>JOIN THE REBELLION</h2>
+          <p>Where rebels gather to change the digital world</p>
+        </div>
+        <div class="comm-cards">
+          <div class="comm-left comm-all w-lg-100">
+            <h2>BECOME PART OF SOMETHING BIGGER</h2>
+            <p class="pbox">
+              Join thousands of designers, developers, and digital rebels who
+              are tired of the same old boring content. Our community is where
+              raw ideas meet bold execution and real change happens.
+            </p>
+            <ul class="comm-p">
+              <li>
+                <span class="white-text"><i class="fa-solid fa-check"></i></span
+                >Weekly brutal insights newsletter with exclusive content
+              </li>
+
+              <li>
+                <span class="white-text">
+                  <i class="fa-brands fa-discord"></i>
+                  <i class="fa-solid fa-question"></i>
+                </span>
+                Exclusive community Discord access for real-time discussions
+              </li>
+
+              <li>
+                <span class="white-text"><i class="fa-solid fa-star"></i></span
+                >Early access to new articles before they go public
+              </li>
+
+              <li>
+                <span class="white-text"
+                  ><i class="fa-solid fa-pencil"></i></span
+                >Submit your own brutal takes and get featured
+              </li>
+            </ul>
+            <span>
+              <button class="btn white-text">
+                <i class="fa-solid fa-rocket"></i>
+                JOIN NOW - IT'S FREE
+              </button></span
+            >
+          </div>
+          <div class="comm-right comm-all box-shadow1 w-lg-100">
+            <h2>WHAT REBELS ARE SAYING</h2>
+            <div class="comm-card comm-card1">
+              <p>
+                "Finally, a blog that tells it like it is. No corporate BS, just
+                pure truth about what's really happening in tech. This is the
+                wake-up call our industry needed."
+              </p>
+              <div class="comm-card-footer">
+                <div class="comm-img">
+                  <img src="./images/avatar-4.avif" alt="community card 1" />
+                </div>
+                <div class="comm-img-title">
+                  <h4>Mark T.</h4>
+                  <p>Senior Designer at Meta</p>
+                </div>
+              </div>
+            </div>
+            <div class="comm-card comm-card2">
+              <p>
+                "The UX Review changed how I think about design. It's raw,
+                honest, and exactly what our industry needs. Every article
+                challenges my assumptions."
+              </p>
+              <div class="comm-card-footer">
+                <div class="comm-img">
+                  <img src="./images/avatar-5.jpg" alt="community card 2" />
+                </div>
+                <div class="comm-img-title">
+                  <h4>ALEX M.</h4>
+                  <p>Lead Developer at Stripe</p>
+                </div>
+              </div>
+            </div>
+            <div class="comm-card comm-card3">
+              <p>
+                "The most authentic voice in digital culture. Every article
+                challenges my assumptions and makes me think differently about
+                the work I do."
+              </p>
+              <div class="comm-card-footer">
+                <div class="comm-img">
+                  <img src="./images/avatar-6.avif" alt="community card 3" />
+                </div>
+                <div class="comm-img-title">
+                  <h4>James K.</h4>
+                  <p>Creative Director at Adobe</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- !community section end -->
+
+    <!-- !footer section start -->
+    <div class="footer section white-text" id="subscribe">
+      <div class="container">
+        <div class="footer-top">
+          <div class="review w-lg-100 w-sm-100">
+            <h2>
+              <span><i class="fa-solid fa-pen-nib footer-pen"></i></span>THE UX
+              REVIEW
+            </h2>
+            <p>
+              Raw, unfiltered thoughts on tech, design, and digital culture. No
+              compromise, no corporate speak, just brutal truth that matters.
+            </p>
+          </div>
+          <div class="categ w-md-30 w-sm-100">
+            <h3>CATEGORIES</h3>
+            <ul>
+              <li><a href="#HOME">TECH</a></li>
+              <li><a href="#HOME">DESIGN</a></li>
+              <li><a href="#HOME">CULTURE</a></li>
+              <li><a href="#HOME">OPINION</a></li>
+              <li><a href="#HOME">TUTORIALS</a></li>
+            </ul>
+          </div>
+          <div class="news w-md-70 w-sm-100">
+            <h3>NEWSLETTER</h3>
+            <p>
+              Get brutal insights delivered weekly. No spam, just truth that
+              cuts through the noise.
+            </p>
+            <form>
+              <input type="email" placeholder="YOUR EMAIL ADDRESS" />
+              <br />
+              <button type="submit" class="btn">SUBSCRIBE</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-end">
+          <div class="copy-rights">
+            <p>© 2025 The UX Review. ALL RIGHTS RESERVED. STAY BRUTAL.</p>
+          </div>
+          <div class="foot-links white-text">
+            <a href="#HOME">PRIVACY POLICY </a>
+            <a href="#HOME">TERMS OF USE </a>
+            <a href="#HOME">COOKIE POLICY </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- !footer section end -->
+    <script>
+      function openNav() {
+        // document.getElementById("aside-active").style.width = "100% ";
+        document.getElementById("aside").style.width = "26%";
+        document.getElementById("layer").style.display = "block";
+        // document.getElementById("layer").style.opacity = "0.5"
+      }
+      function closeNav() {
+        // document.getElementById("aside-active").style.width = "0%";
+        document.getElementById("aside").style.width = "0%";
+        // document.getElementById("layer").style.right = "-100%";
+        // document.getElementById("layer").style.opacity = "0";
+        document.getElementById("layer").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
